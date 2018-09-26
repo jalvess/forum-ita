@@ -1,0 +1,10 @@
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+    <%@ include file="/css/estilo.css" %>
+</style>
+    <title>${!empty title ? title : 'F&oacute;rum' }</title>
+</head>

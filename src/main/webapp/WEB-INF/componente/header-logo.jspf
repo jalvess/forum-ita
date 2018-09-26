@@ -1,0 +1,46 @@
+
+<%@page import="br.com.coursera.utils.SessionUtils"%>
+<header>
+	<h1>
+		<a href="${pageContext.request.contextPath}" style="text-decoration: none; color: inherit;">F&oacute;rum</a>
+	</h1>
+	<%
+		if (request.getAttribute("adicionado") != null) {
+			if ((boolean) request.getAttribute("adicionado"))
+				out.write("<span class=msg-sucesso>Cadastrado com sucesso!</span>");
+			else
+				out.write("<span class=msg-erro>Cadastro n&atilde;o realizado</span>");
+		}
+	%>
+	<div id="user_header"
+		<%if (request.getSession().getAttribute("user") == null)
+				out.append("style='display:none'");%>>
+		<span>${user}</span> <span id="timer"
+			style="display: block; font-size: .4em;"></span> <a
+			href="auth?logout">Sair</a>
+	</div>
+	<script type="text/javascript">
+		timer(
+	<%=SessionUtils.segundosRestantes(request.getSession())%>
+		);
+		function timer(segs) {
+			minutos = segs / 60;
+			contador = segs / 60;
+			var timer = document.getElementById('timer');
+			setInterval(function() {
+				if (contador < 0) {
+					if (minutos < 0) {
+						clearInterval(this);
+						return;
+					}
+					minutos--;
+					contador = 59;
+				}
+				timer.innerHTML = (minutos < 10 ? "0" : "") + parseInt(minutos)
+						+ "min:" + (contador < 10 ? "0" : "")
+						+ parseInt(contador) + "segs.";
+				contador--;
+			}, 1000)
+		}
+	</script>
+</header>

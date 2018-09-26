@@ -1,0 +1,8 @@
+<dataset>
+	<topico titulo="Do que são feitos os amendoins"
+		conteudo="Existem dois tipos de amendoins etc etc etc........ lores ipsum"
+		login="peter" />
+	<topico titulo="Do que são feitos os amendoins - o Retorno"
+		conteudo="Existem mais dois tipos de amendoins etc etc etc........ lores ipsum"
+		login="peter" />
+</dataset>

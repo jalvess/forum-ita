@@ -1,0 +1,277 @@
+$theme:#227;
+$dark-theme:#006;
+$vermelho:rgb(177, 45, 45);
+::selection {
+    background-color: $vermelho;
+    color: #fff;
+}
+
+#links {
+    float: right;
+}
+
+#user_header {
+    font-weight: bold;
+    font-family: arial;
+    display: inline-block;
+    float: right;
+    font-size: 1.5em;
+    margin: 1% 2%;
+    a {
+        font-size: .8em;
+        color: $vermelho;
+        display: block;
+        text-align: right;
+        font-weight: bold;
+        &:hover,
+        &:focus {
+            color: lighten($vermelho, 10%);
+        }
+    }
+}
+
+body {
+    margin: 0;
+    background-image: radial-gradient(#10102d 70%, #1f1f3a 20%, #632c2c 29%);
+    color: #eee;
+    background-position: 220px;
+}
+
+.msg-erro {
+    color: #ff0000;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+a {
+    color: $vermelho;
+    font-weight: bolder;
+    outline: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    &:hover,
+    &:focus {
+        color: lighten($vermelho, 15%);
+    }
+}
+
+main {
+    background-color: $theme;
+    width: 100vw;
+    min-height: 50vh;
+    padding: 2%;
+    box-sizing: border-box;
+}
+
+#table-screen {
+    #links {
+        float: right;
+    }
+    main {
+        min-height: 60vh;
+    }
+    table {
+        width: 100%;
+        margin-top: 2%;
+        th {
+            background-color: $vermelho;
+            color: #eee;
+        }
+        td {
+            background-color: #fff;
+            color: $vermelho;
+            font-weight: bold;
+        }
+        th,
+        td {
+            text-align: center;
+            padding: .5%;
+            border: .1px solid $vermelho;
+        }
+    }
+}
+
+#cadastro-screen {
+    main {
+        background-color: $theme;
+        width: 100vw;
+        min-height: 50vh;
+        padding: 2%;
+        box-sizing: border-box;
+    }
+    #form-cadastro {
+        margin: 2%;
+        width: 50%;
+    }
+    input:not([type*=submit]) {
+        height: 25px;
+        width: 100%;
+        display: block;
+    }
+    label {
+        line-height: 1.5em;
+        font-size: 2em;
+    }
+    .btn {
+        height: 35px;
+        width: 100px;
+        float: right;
+        margin: 1% 0;
+    }
+}
+
+#login-screen {
+    h1 {
+        font-size: 10em;
+    }
+    .msg-erro {
+        float: right;
+        margin-right: 2%;
+    }
+    #form-login {
+        display: block;
+    }
+    #link-cadastro {
+        display: initial;
+    }
+    header {
+        min-height: 50vh;
+        border-bottom: 20px solid $dark-theme;
+    }
+    input:not([type*=submit]) {
+        height: 5.5%;
+        display: block;
+    }
+}
+
+h1 {
+    font-size: 3em;
+    display: inline-block;
+}
+
+h1,
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    color: #eee;
+    word-break: break-all;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+header {
+    background-color: $theme;
+    color: #eee;
+    padding-left: 1%;
+    box-sizing: border-box;
+    border-bottom: 10px solid $dark-theme;
+}
+
+#form-login {
+    margin: 0;
+}
+
+#link-cadastro {
+    color: lighten( $vermelho, 5%);
+    font-weight: bolder;
+    font-size: 1.1em;
+    margin: 1%;
+    display: none;
+    line-height: 2em;
+    outline: 0;
+    &:hover,
+    &:focus {
+        color: lighten( $vermelho, 10%);
+    }
+}
+
+.form-group {
+    display: inline-block;
+    width: 15%;
+    margin: -1% .1%;
+    input:not([type=submit]) {
+        width: 100%;
+    }
+}
+
+form {
+    margin: 0;
+    label {
+        font-size: 1.3em;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        display: inline-block;
+        line-height: 1.1em;
+    }
+    textarea {
+        height: 40vh;
+        font-size: 1.3em;
+    }
+    input:not([type=submit]) {
+        height: 50px;
+        font-size: 1.5em;
+    }
+    input:not([type=submit]),
+    textarea {
+        opacity: .8;
+        // width: 100%;
+        font-family: cursive;
+        transition: opacity .1s;
+        &:focus {
+            opacity: 1;
+        }
+    }
+     ::placeholder {
+        font-size: 1.2em;
+        padding: 1%;
+    }
+}
+
+#conteudo {
+    width: 80%;
+    p {
+        color: #fff;
+        line-height: 2em;
+        font-size: 1.5em;
+        background-color: $vermelho;
+        padding: 2%;
+    }
+}
+
+#novo-screen {
+    form {
+        margin: 2%;
+        width: 80%;
+    }
+    .btn {
+        height: 35px;
+        width: 100px;
+        float: right;
+        margin: 1% 0;
+        outline: 0;
+    }
+    input,
+    textarea {
+        width: 100%;
+        display: block;
+    }
+    label {
+        line-height: 2em;
+    }
+}
+
+input[type=submit] {
+    background-color: $vermelho;
+    color: #fff;
+    font-weight: bolder;
+    height: 5%;
+    border: 0;
+    text-transform: uppercase;
+    padding: 0 1.1%;
+    cursor: pointer;
+    transition: background-color .2s;
+    &:hover,
+    &:focus {
+        background-color: $dark-theme;
+    }
+}

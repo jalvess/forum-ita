@@ -1,0 +1,333 @@
+::-moz-selection {
+  background-color: #b12d2d;
+  color: #fff;
+}
+
+::selection {
+  background-color: #b12d2d;
+  color: #fff;
+}
+
+#links {
+  float: right;
+}
+
+#user_header {
+  font-weight: bold;
+  font-family: arial;
+  display: inline-block;
+  float: right;
+  font-size: 1.5em;
+  margin: 1% 2%;
+}
+
+#user_header a {
+  font-size: .8em;
+  color: #b12d2d;
+  display: block;
+  text-align: right;
+  font-weight: bold;
+}
+
+#user_header a:hover, #user_header a:focus {
+  color: #cf4242;
+}
+
+body {
+  margin: 0;
+  background-image: radial-gradient(#10102d 70%, #1f1f3a 20%, #632c2c 29%);
+  color: #eee;
+  background-position: 220px;
+}
+
+.msg-erro {
+  color: #de4c4c;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.msg-sucesso{
+	color: #1ab31a;
+	font-weight: bolder;
+    font-family: arial;
+}
+
+a {
+  color: #b12d2d;
+  font-weight: bolder;
+  outline: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a:hover, a:focus {
+  color: #d45656;
+}
+
+main {
+/*   background-color: #227; */
+  min-height: 50vh;
+  padding: 2%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#table-screen #links {
+  float: right;
+}
+
+#table-screen main {
+  min-height: 60vh;
+}
+
+#table-screen table {
+  width: 100%;
+  margin-top: 2%;
+}
+
+#table-screen table th {
+  background-color: #b12d2d;
+  color: #eee;
+}
+
+#table-screen table td {
+  background-color: #fff;
+  color: #b12d2d;
+  font-weight: bold;
+}
+
+#table-screen table th,
+#table-screen table td {
+  text-align: center;
+  padding: .5%;
+  border: 0.1px solid #b12d2d;
+}
+
+#cadastro-screen main {
+/*   background-color: #227; */
+  width: 100vw;
+  min-height: 50vh;
+  padding: 2%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#cadastro-screen #form-cadastro {
+  margin: 2%;
+  width: 50%;
+    -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#cadastro-screen input:not([type*=submit]) {
+  height: 25px;
+  width: 100%;
+  display: block;
+}
+
+#cadastro-screen label {
+  line-height: 1.5em;
+  font-size: 2em;
+}
+
+#cadastro-screen .btn {
+  height: 35px;
+  width: 100px;
+  float: right;
+  margin: 1% 0;
+}
+
+#login-screen h1 {
+  font-size: 10em;
+}
+
+#login-screen .msg-erro {
+  float: right;
+  margin-right: 2%;
+}
+
+#login-screen #form-login {
+  display: block;
+}
+
+#login-screen #link-cadastro {
+  display: initial;
+}
+
+#login-screen header {
+  min-height: 50vh;
+  border-bottom: 20px solid #006;
+}
+
+#login-screen input:not([type*=submit]) {
+  height: 5.5%;
+  display: block;
+}
+
+h1 {
+  font-size: 3em;
+  display: inline-block;
+}
+
+h1,
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  color: #eee;
+  word-break: break-all;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+header {
+/*   background-color: #227; */
+background-color:#10103d;
+  color: #eee;
+  padding-left: 1%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom: 10px solid #005;
+}
+
+#form-login {
+  margin: 0;
+}
+
+#link-cadastro {
+  color: #c53232;
+  font-weight: bolder;
+  font-size: 1.1em;
+  margin: 1%;
+  display: none;
+  line-height: 2em;
+  outline: 0;
+}
+
+#link-cadastro:hover, #link-cadastro:focus {
+  color: #cf4242;
+}
+
+.form-group {
+  display: inline-block;
+  width: 15%;
+  margin: -1% .1%;
+}
+
+.form-group input:not([type=submit]) {
+  width: 100%;
+}
+
+form {
+  margin: 0;
+}
+
+form label {
+  font-size: 1.3em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  display: inline-block;
+  line-height: 1.1em;
+}
+
+form textarea {
+  height: 40vh;
+  font-size: 1.3em;
+  width:100%;
+}
+
+form input:not([type=submit]) {
+  height: 50px;
+  font-size: 1.5em;
+}
+
+form input:not([type=submit]),
+form textarea {
+  opacity: .8;
+  font-family: cursive;
+  -webkit-transition: opacity .1s;
+  transition: opacity .1s;
+}
+
+form input:not([type=submit]):focus,
+form textarea:focus {
+  opacity: 1;
+}
+
+form ::-webkit-input-placeholder {
+  font-size: 1.2em;
+  padding: 1%;
+}
+
+form :-ms-input-placeholder {
+  font-size: 1.2em;
+  padding: 1%;
+}
+
+form ::-ms-input-placeholder {
+  font-size: 1.2em;
+  padding: 1%;
+}
+
+form ::placeholder {
+  font-size: 1.2em;
+  padding: 1%;
+}
+
+#conteudo {
+  width: 80%;
+}
+
+#conteudo p {
+  color: #fff;
+  line-height: 2em;
+  font-size: 1.5em;
+  background-color: #b12d2d;
+  padding: 2%;
+}
+
+#novo-screen form {
+  margin: 2%;
+  width: 80%;
+}
+
+#novo-screen .btn {
+  height: 35px;
+  width: 100px;
+  float: right;
+  margin: 1% 0;
+  outline: 0;
+}
+
+#novo-screen input,
+#novo-screen textarea {
+  width: 100%;
+  display: block;
+}
+
+#novo-screen label {
+  line-height: 2em;
+}
+
+input[type=submit], .btn {
+  background-color: #b12d2d;
+  color: #fff;
+  outline:0;
+  font-weight: bolder;
+  height: 5%;
+  border: 0;
+  text-transform: uppercase;
+  padding: 0 1.1%;
+  cursor: pointer;
+  -webkit-transition: background-color .2s;
+  transition: background-color .2s;
+}
+
+input[type=submit]:hover, input[type=submit]:focus, .btn:focus, .btn:hover {
+  background-color: #006;
+}
+
+#comentario .btn{
+	padding:1.2%;
+}
+
+/*# sourceMappingURL=estilo.css.map */

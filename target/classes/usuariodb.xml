@@ -1,0 +1,12 @@
+<dataset>
+	<usuario nome="Mario" login="mario" email="mario@gmail.com"
+		senha="81dc9bdb52d04dc20036dbd8313ed055" pontos="1" />
+	<usuario nome="Peter" login="peter" email="peter@gmail.com"
+		senha="81dc9bdb52d04dc20036dbd8313ed055" pontos="1"/>
+	<usuario nome="James" login="bond" email="bond@gmail.com"
+		senha="81dc9bdb52d04dc20036dbd8313ed055" pontos="1"  />
+	<usuario nome="Logan" login="logan" email="logan@gmail.com"
+		senha="81dc9bdb52d04dc20036dbd8313ed055"  pontos="1" />
+	<usuario nome="Lucy" login="lucy" email="lucy@gmail.com"
+		senha="81dc9bdb52d04dc20036dbd8313ed055"  pontos="1"/>
+</dataset>
